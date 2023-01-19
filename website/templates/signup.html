@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+{% block title %}Change{% endblock %}
+{%block content%}
+  <div class="row justify-content-center">
+  <div class="col-md-5">
+      <br>
+   <div class="card">
+       <form method = "POST">
+           <h2 align="center">Register</h2>
+      <div class="card-body py-md-4">
+          <div class="form-group">
+             <input type="text" class="form-control" id="name" name = "name" placeholder="Name">
+        </div>
+          <br>
+        <div class="form-group">
+             <input type="email" class="form-control" id="email" name = "email" placeholder="Email">
+                            </div>
+          <br>
+   <div class="form-group">
+     <input type="password" class="form-control" id="password1" name="password1" placeholder="Password">
+   </div>
+          <br>
+   <div class="form-group">
+      <input type="password" class="form-control" id="password2" name="password2" placeholder="confirm-password">
+   </div>
+           <br>
+       <div class="d-flex flex-row align-items-center justify-content-between">
+       <a href="/login">Login</a>
+       <button type = "submit" class="btn btn-primary">Create Account</button>
+          </div>
+      </div>
+       </form>
+     </div>
+
+  </div>
+</div>
+
+
+{%endblock%}
